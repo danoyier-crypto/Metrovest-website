@@ -1,0 +1,22 @@
+{
+  "name": "metrovest-website",
+  "version": "1.0.0",
+  "description": "Metrovest Insurance Agency Website",
+  "type": "module",
+  "scripts": {
+    "dev": "npx http-server metrovest-agency-v3 -p 3000",
+    "build": "echo 'Static site - no build required'",
+    "lint": "echo 'No linter configured for static HTML'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "insurance",
+    "metrovest",
+    "kenya"
+  ],
+  "author": "",
+  "license": "ISC"
+}
