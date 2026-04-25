@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Travel Insurance | Metrovest Insurance Agency Kenya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#1a237e;--navy-dark:#0d1257;--navy-mid:#283593;--green:#1b7c3e;--green-light:#2ea055;--green-pale:#e8f5ed;--white:#ffffff;--gray:#5a6a7a;--text:#1a2535;--border:#d4dce6;--cream:#f4f7fb;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Satoshi',sans-serif;background:var(--white);color:var(--text);}
+#topbar{background:var(--navy-dark);height:38px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,0.08);}
+.topbar-inner{max-width:1280px;margin:0 auto;padding:0 5%;display:flex;align-items:center;justify-content:space-between;width:100%;}
+.topbar-left a{color:rgba(255,255,255,0.6);font-size:0.75rem;text-decoration:none;margin-right:20px;transition:color 0.2s;}
+.topbar-left a:hover{color:#7fe09a;}
+.topbar-btn{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.75);font-size:0.72rem;font-weight:600;padding:4px 12px;border-radius:4px;text-decoration:none;}
+.topbar-btn.primary{background:var(--green);border-color:var(--green);color:#fff;}
+#mainnav{position:sticky;top:0;z-index:900;background:var(--navy);border-bottom:3px solid var(--green);box-shadow:0 2px 20px rgba(0,0,0,0.25);}
+.mainnav-inner{max-width:1280px;margin:0 auto;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:72px;}
+.nav-logo svg{height:44px;display:block;}
+.nav-cta{background:var(--green);color:#fff;padding:10px 22px;border-radius:7px;font-weight:700;font-size:0.88rem;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:all 0.3s;}
+.nav-cta:hover{background:var(--green-light);}
+.nav-back{color:rgba(255,255,255,0.75);font-size:0.82rem;text-decoration:none;display:flex;align-items:center;gap:6px;transition:color 0.2s;}
+.nav-back:hover{color:#7fe09a;}
+/* ── HERO ── */
+.product-hero{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 55%,#163a5f 80%,#0d3020 100%);padding:28px 5% 0;position:relative;overflow:hidden;}
+.product-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
+.hero-inner{max-width:1280px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:start;}
+.hero-left{padding-bottom:28px;}
+.breadcrumb{color:rgba(255,255,255,0.45);font-size:0.75rem;margin-bottom:14px;letter-spacing:0.5px;}
+.breadcrumb a{color:rgba(255,255,255,0.55);text-decoration:none;}
+.breadcrumb a:hover{color:#7fe09a;}
+.hero-cat{display:inline-flex;align-items:center;gap:8px;background:rgba(27,124,62,0.2);border:1px solid rgba(27,124,62,0.4);color:#7fe09a;font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:50px;margin-bottom:16px;}
+.product-hero h1{font-size:clamp(2rem,4vw,3rem);font-weight:900;color:#fff;line-height:1.1;margin-bottom:14px;letter-spacing:-0.5px;}
+.product-hero .tagline{color:rgba(232,237,242,0.72);font-size:1rem;line-height:1.75;max-width:520px;margin-bottom:28px;}
+.hero-cta-row{display:flex;gap:12px;flex-wrap:wrap;}
+.btn-primary{background:var(--green);color:#fff;padding:13px 28px;border-radius:8px;font-weight:700;font-size:0.92rem;text-decoration:none;display:inline-flex;align-items:center;gap:7px;transition:all 0.3s;border:none;cursor:pointer;font-family:'Satoshi',sans-serif;}
+.btn-primary:hover{background:var(--green-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(27,124,62,0.4);}
+.btn-outline{background:transparent;color:#fff;padding:13px 28px;border-radius:8px;font-weight:600;font-size:0.92rem;text-decoration:none;border:1.5px solid rgba(255,255,255,0.35);display:inline-flex;align-items:center;gap:7px;transition:all 0.3s;}
+.btn-outline:hover{border-color:#7fe09a;color:#7fe09a;}
+/* ── HERO IMAGE PANEL ── */
+.hero-img-panel{position:relative;display:flex;flex-direction:column;align-items:center;}
+.hero-img{width:100%;border-radius:16px 16px 0 0;display:block;overflow:hidden;box-shadow:0 -8px 40px rgba(0,0,0,0.35);}
+.hero-img img{width:100%;height:360px;object-fit:cover;object-position:center 25%;display:block;border-radius:16px 16px 0 0;}
+/* ── PRICE STRIP BELOW IMAGE ── */
+.price-strip{width:100%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-top:none;border-radius:0 0 16px 16px;padding:12px 22px;display:flex;align-items:center;gap:12px;}
+.ps-from-label{color:rgba(232,237,242,0.5);font-size:0.72rem;text-transform:uppercase;letter-spacing:1.5px;}
+
+
+.ps-from-value{color:#7fe09a;font-weight:700;font-size:1rem;}
+/* ── MAIN CONTENT ── */
+.page-body{max-width:1280px;margin:0 auto;padding:64px 5%;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+.section{margin-bottom:48px;}
+.section-label{display:inline-block;color:var(--green);font-size:0.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px;}
+.section h2{font-size:1.55rem;font-weight:900;color:var(--navy);margin-bottom:20px;}
+.intro-text{color:var(--gray);font-size:1rem;line-height:1.85;}
+.cover-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;}
+.cover-grid li{list-style:none;display:flex;align-items:flex-start;gap:10px;background:var(--cream);border:1px solid var(--border);border-radius:8px;padding:12px 14px;font-size:0.86rem;color:var(--text);line-height:1.45;}
+.cover-grid li .check{color:var(--green);font-weight:700;flex-shrink:0;margin-top:1px;}
+.benefits-list{display:flex;flex-direction:column;gap:10px;margin-top:16px;}
+.benefits-list li{list-style:none;display:flex;align-items:flex-start;gap:12px;padding:14px 16px;background:var(--green-pale);border-left:3px solid var(--green);border-radius:0 8px 8px 0;font-size:0.88rem;color:var(--text);}
+.benefits-list li .star{color:var(--green);font-weight:700;flex-shrink:0;}
+.who-box{background:var(--navy);border-radius:12px;padding:24px;margin-top:16px;}
+.who-box p{color:rgba(232,237,242,0.8);font-size:0.9rem;line-height:1.7;}
+/* ── SIDEBAR ── */
+.sidebar{position:sticky;top:88px;}
+.quote-card{background:var(--white);border:1.5px solid var(--border);border-radius:16px;padding:28px;margin-bottom:24px;box-shadow:0 4px 24px rgba(26,35,126,0.08);}
+.quote-card h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.quote-card p{color:var(--gray);font-size:0.8rem;margin-bottom:20px;}
+.qf{display:flex;flex-direction:column;gap:10px;}
+.qf input,.qf select{width:100%;background:var(--cream);border:1.5px solid var(--border);border-radius:7px;padding:10px 13px;color:var(--text);font-family:'Satoshi',sans-serif;font-size:0.85rem;outline:none;transition:border-color 0.2s;appearance:none;}
+.qf input:focus,.qf select:focus{border-color:var(--green);background:#fff;}
+.qf input::placeholder{color:var(--gray);}
+.qf-submit{width:100%;background:var(--navy);color:#fff;padding:13px;border-radius:7px;font-weight:700;font-size:0.9rem;border:none;cursor:pointer;font-family:'Satoshi',sans-serif;transition:all 0.3s;}
+.qf-submit:hover{background:var(--green);}
+.success-msg{display:none;background:var(--green-pale);border:1px solid rgba(27,124,62,0.3);border-radius:7px;padding:12px;color:#1b5e2f;font-size:0.83rem;margin-top:8px;}
+.success-msg.show{display:block;}
+.contact-card{background:var(--cream);border:1px solid var(--border);border-radius:12px;padding:20px;}
+.contact-card h4{font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--navy);margin-bottom:14px;}
+.c-item{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:0.84rem;color:var(--text);text-decoration:none;}
+.c-item:last-child{margin-bottom:0;}
+.c-icon{width:32px;height:32px;background:var(--navy);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;}
+/* ── RELATED ── */
+.related-section{background:var(--cream);border-top:1px solid var(--border);padding:56px 5%;}
+.related-inner{max-width:1280px;margin:0 auto;}
+.related-section h3{font-size:1.2rem;font-weight:900;color:var(--navy);margin-bottom:24px;}
+.rel-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.rel-card{background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:20px;text-decoration:none;display:flex;align-items:center;gap:14px;transition:all 0.3s;}
+.rel-card:hover{border-color:var(--green);transform:translateY(-2px);box-shadow:0 8px 24px rgba(26,35,126,0.1);}
+.rel-icon{font-size:1.6rem;}
+.rel-title{color:var(--navy);font-weight:700;font-size:0.88rem;flex:1;}
+.rel-arrow{color:var(--green);font-weight:700;}
+footer{background:var(--navy-dark);border-top:3px solid var(--green);padding:32px 5%;}
+.footer-bottom{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{color:rgba(232,237,242,0.35);font-size:0.75rem;}
+.footer-bottom a{color:var(--green-light);text-decoration:none;}
+@media(max-width:1000px){
+  .hero-inner{grid-template-columns:1fr; gap:0;}
+  .hero-img-panel{display:flex; width:100%; border-radius:0;}
+  .hero-img img{height:260px; border-radius:0;}
+  .price-strip{width:100%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-top:none;border-radius:0 0 16px 16px;padding:12px 22px;display:flex;align-items:center;gap:12px;}
+  .hero-left{padding-bottom:20px;}
+  .page-body{grid-template-columns:1fr;}
+  .sidebar{position:static;}
+  .cover-grid{grid-template-columns:1fr;}
+  .rel-cards{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  #topbar{display:none;}
+  .product-hero{padding:40px 4% 0;}
+  .hero-left{padding-bottom:20px;}
+  .hero-img img{height:220px;}
+  .price-strip{width:100%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-top:none;border-radius:0 0 16px 16px;padding:12px 22px;display:flex;align-items:center;gap:12px;}
+  .ps-item{border-right:none; border-bottom:1px solid rgba(255,255,255,0.1); padding:8px 0;}
+  
+  .page-body{padding:36px 4%;}
+  .hero-cta-row{flex-direction:column;}
+  .btn-primary,.btn-outline{width:100%;justify-content:center;}
+}
+</style>
+</head>
+<body>
+<div id="topbar"><div class="topbar-inner"><div class="topbar-left"><a href="tel:+254734590744">📞 +254 734 590 744</a><a href="mailto:info@metrovest.co.ke">✉️ info@metrovest.co.ke</a></div><a href="index.html#get-quote" class="topbar-btn primary">Request Callback</a></div></div>
+<nav id="mainnav"><div class="mainnav-inner"><a href="index.html" class="nav-logo"><svg width="220" height="43" viewBox="0 0 400 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <title>Metrovest Insurance Agency</title>
+      <g transform="translate(18 14)">
+        <rect x="4" y="8" width="6" height="38" rx="1" fill="#ffffff"/>
+        <path d="M10 8 L18 8 L24 26 L30 8 L38 8" fill="none" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M30 8 L38 8 L44 26 L50 8 L58 8" fill="none" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+        <rect x="56" y="8" width="6" height="38" rx="1" fill="#ffffff"/>
+        <path d="M8 52 Q32 42 64 52" fill="none" stroke="#7fe09a" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <text x="92" y="46" font-family="Arial Black, Helvetica Neue, sans-serif" font-size="37" font-weight="900" fill="#ffffff" letter-spacing="-1.3">METROVEST</text>
+      <text x="92" y="62" font-family="Arial, Helvetica Neue, sans-serif" font-size="11.5" font-weight="700" fill="#7fe09a" letter-spacing="4">INSURANCE AGENCY</text>
+    </svg></a><div style="display:flex;align-items:center;gap:20px;"><a href="index.html" class="nav-back">← Back to Home</a><a href="index.html#get-quote" class="nav-cta">Get a Quote →</a></div></div></nav>
+<section class="product-hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="breadcrumb"><a href="index.html">Home</a> › <a href="products.html">Health</a> › Travel Insurance</div>
+      <div class="hero-cat">✈️ Health</div>
+      <h1>Travel Insurance</h1>
+      <p class="tagline">We source and compare travel plans so you're fully protected every journey</p>
+      <div class="hero-cta-row">
+        <a href="index.html#get-quote" class="btn-primary">Compare Plans →</a>
+        <a href="tel:+254734590744" class="btn-outline">📞 Call Us Now</a>
+      </div>
+    </div>
+    <div class="hero-img-panel">
+      <div class="hero-img"><img src="data:image/jpeg;base64,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" alt="Travel Insurance — Metrovest Insurance Kenya"/></div>
+      <div class="price-strip">
+        <span class="ps-from-label">Starting From</span>
+        <span class="ps-from-value">From KSh 2,500 per trip</span>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="page-body">
+  <main>
+    <div class="section"><span class="section-label">About This Cover</span><h2>What Is Travel Insurance?</h2><p class="intro-text">Metrovest partners with leading Kenyan and international underwriters to source travel insurance plans that meet your exact itinerary — whether you're visiting East Africa, applying for a Schengen visa, or working abroad for months at a time. We compare cover, exclusions and premiums across the market so you travel with confidence at the right price.</p></div>
+    <div class="section"><span class="section-label">Coverage</span><h2>What's Covered</h2><ul class="cover-grid"><li><span class="check">✓</span>Emergency medical expenses abroad</li><li><span class="check">✓</span>Medical evacuation and repatriation to Kenya</li><li><span class="check">✓</span>Trip cancellation and curtailment</li><li><span class="check">✓</span>Lost, stolen or delayed baggage</li><li><span class="check">✓</span>Flight delay allowance</li><li><span class="check">✓</span>Personal accident — death and disability</li><li><span class="check">✓</span>Personal liability abroad</li><li><span class="check">✓</span>Emergency dental treatment</li><li><span class="check">✓</span>Hijacking and kidnap benefit</li><li><span class="check">✓</span>Legal expenses abroad</li></ul></div>
+    <div class="section"><span class="section-label">Why Use Metrovest</span><h2>Benefits of Using a Metrovest Advisor</h2><ul class="benefits-list"><li><span class="star">★</span>We source single-trip and multi-trip plans from multiple underwriters</li><li><span class="star">★</span>Schengen-compliant options available for EU visa applications</li><li><span class="star">★</span>Emergency assistance numbers from your insurer's global network</li><li><span class="star">★</span>We handle claim queries and liaise with the insurer on your behalf</li><li><span class="star">★</span>Fast policy issuance — same day for most travel plans</li><li><span class="star">★</span>No extra cost — insurer-funded advisory</li></ul></div>
+    <div class="section"><span class="section-label">Who We Help</span><h2>Who We Help</h2><div class="who-box"><p>Frequent travellers, students abroad, executives, missionaries and diplomats</p></div></div>
+  </main>
+  <aside class="sidebar">
+    <div class="quote-card">
+      <h3>Get Expert Advice</h3><p>We'll compare options and call you within 2 hours</p>
+      <div class="qf">
+        <input type="text" placeholder="Full Name" id="name_travel-insurance"/>
+        <input type="tel" placeholder="Phone Number" id="phone_travel-insurance"/>
+        <input type="email" placeholder="Email Address" id="email_travel-insurance"/>
+        <select id="how_travel-insurance"><option value="">How can we help?</option><option>New Policy</option><option>Renew Existing Policy</option><option>Compare Options</option><option>General Enquiry</option></select>
+        <button class="qf-submit" title="Metrovest will compare options and call you back" onclick="submitQ('travel-insurance')">Request Quote →</button>
+        <div class="success-msg" id="ok_travel-insurance">✅ Received! We'll call you within 2 hours.</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <h4>Speak to an Advisor</h4>
+      <a href="tel:+254734590744" class="c-item"><span class="c-icon">📞</span> +254 734 590 744</a>
+      <a href="mailto:info@metrovest.co.ke" class="c-item"><span class="c-icon">✉️</span> info@metrovest.co.ke</a>
+      <a href="https://wa.me/254734590744?text=Hi, I need a quote for Travel Insurance" target="_blank" class="c-item"><span class="c-icon">💬</span> WhatsApp Us</a>
+    </div>
+  </aside>
+</div>
+<section class="related-section"><div class="related-inner"><h3>You Might Also Be Interested In</h3><div class="rel-cards"><a href="medical-insurance.html" class="rel-card"><span class="rel-icon">🏥</span><span class="rel-title">Medical Insurance</span><span class="rel-arrow">→</span></a><a href="family-medical-cover.html" class="rel-card"><span class="rel-icon">👨‍👩‍👧</span><span class="rel-title">Family Medical Cover</span><span class="rel-arrow">→</span></a><a href="international-health-cover.html" class="rel-card"><span class="rel-icon">🌍</span><span class="rel-title">International Health Cover</span><span class="rel-arrow">→</span></a></div></div></section>
+<footer><div class="footer-bottom"><p>© 2025 Metrovest Insurance Agency. IRA Licensed. All rights reserved.</p><p><a href="index.html">Home</a> · <a href="index.html#get-quote">Get Advice</a></p></div></footer>
+<script>
+function submitQ(slug){var n=document.getElementById('name_'+slug).value;var p=document.getElementById('phone_'+slug).value;if(!n||!p){alert('Please enter your name and phone number.');return;}document.getElementById('ok_'+slug).classList.add('show');['name_','phone_','email_','how_'].forEach(function(pre){var el=document.getElementById(pre+slug);if(el)el.value='';});setTimeout(function(){document.getElementById('ok_'+slug).classList.remove('show');},7000);}
+</script>
+</body></html>

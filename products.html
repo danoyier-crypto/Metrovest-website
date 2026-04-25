@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>All Insurance Products | Metrovest Insurance Agency Kenya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#1a237e;--navy-dark:#0d1257;--navy-mid:#283593;--green:#1b7c3e;--green-light:#2ea055;--green-pale:#e8f5ed;--white:#ffffff;--gray:#5a6a7a;--text:#1a2535;--border:#d4dce6;--cream:#f4f7fb;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Satoshi',sans-serif;background:var(--white);color:var(--text);}
+#topbar{background:var(--navy-dark);height:38px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,0.08);}
+.topbar-inner{max-width:1280px;margin:0 auto;padding:0 5%;display:flex;align-items:center;justify-content:space-between;width:100%;}
+.topbar-left a{color:rgba(255,255,255,0.6);font-size:0.75rem;text-decoration:none;margin-right:20px;transition:color 0.2s;}
+.topbar-left a:hover{color:#7fe09a;}
+.topbar-btn{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.75);font-size:0.72rem;font-weight:600;padding:4px 12px;border-radius:4px;text-decoration:none;}
+.topbar-btn.primary{background:var(--green);border-color:var(--green);color:#fff;}
+#mainnav{position:sticky;top:0;z-index:900;background:var(--navy);border-bottom:3px solid var(--green);box-shadow:0 2px 20px rgba(0,0,0,0.25);}
+.mainnav-inner{max-width:1280px;margin:0 auto;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:72px;}
+.nav-logo svg{height:44px;display:block;}
+.nav-back{color:rgba(255,255,255,0.75);font-size:0.82rem;text-decoration:none;display:flex;align-items:center;gap:6px;transition:color 0.2s;}
+.nav-back:hover{color:#7fe09a;}
+.nav-cta{background:var(--green);color:#fff;padding:10px 22px;border-radius:7px;font-weight:700;font-size:0.88rem;text-decoration:none;transition:all 0.3s;}
+.nav-cta:hover{background:var(--green-light);}
+/* hero */
+.page-hero{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 60%,#163a5f 100%);padding:56px 5%;}
+.page-hero-inner{max-width:1280px;margin:0 auto;}
+.breadcrumb{color:rgba(255,255,255,0.45);font-size:0.75rem;margin-bottom:14px;}
+.breadcrumb a{color:rgba(255,255,255,0.55);text-decoration:none;}
+.breadcrumb a:hover{color:#7fe09a;}
+.page-hero h1{font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:900;color:#fff;margin-bottom:12px;letter-spacing:-0.5px;}
+.page-hero p{color:rgba(232,237,242,0.7);font-size:1rem;max-width:560px;line-height:1.75;}
+/* search bar */
+.search-bar{max-width:1280px;margin:0 auto;padding:32px 5% 0;}
+.search-input{width:100%;max-width:480px;background:var(--cream);border:2px solid var(--border);border-radius:10px;padding:13px 18px;font-family:'Satoshi',sans-serif;font-size:0.95rem;color:var(--text);outline:none;transition:border-color 0.2s;}
+.search-input:focus{border-color:var(--green);}
+/* content */
+.content{max-width:1280px;margin:0 auto;padding:48px 5% 64px;}
+.cat-section{margin-bottom:56px;}
+.cat-header{display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:14px;border-bottom:2px solid var(--border);}
+.cat-icon{font-size:1.5rem;}
+.cat-header h2{font-size:1.25rem;font-weight:900;color:var(--navy);}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.prod-card{background:var(--cream);border:1.5px solid var(--border);border-radius:12px;padding:22px;text-decoration:none;display:flex;flex-direction:column;gap:10px;transition:all 0.3s;}
+.prod-card:hover{border-color:var(--green);transform:translateY(-3px);box-shadow:0 10px 30px rgba(26,35,126,0.1);background:var(--white);}
+.prod-icon{font-size:1.8rem;}
+.prod-card h3{font-size:0.95rem;font-weight:700;color:var(--navy);line-height:1.3;}
+.prod-card p{font-size:0.8rem;color:var(--gray);line-height:1.6;flex:1;}
+.prod-link{color:var(--green);font-size:0.78rem;font-weight:700;}
+/* footer */
+footer{background:var(--navy-dark);border-top:3px solid var(--green);padding:32px 5%;}
+.footer-bottom{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{color:rgba(232,237,242,0.35);font-size:0.75rem;}
+.footer-bottom a{color:var(--green-light);text-decoration:none;}
+/* responsive */
+@media(max-width:1100px){.prod-grid{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:768px){.prod-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:480px){.prod-grid{grid-template-columns:1fr;}#topbar{display:none;}}
+</style>
+</head>
+<body>
+<div id="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <a href="tel:+254734590744">📞 +254 734 590 744</a>
+      <a href="mailto:info@metrovest.co.ke">✉️ info@metrovest.co.ke</a>
+    </div>
+    <a href="index.html#get-quote" class="topbar-btn primary">Request Callback</a>
+  </div>
+</div>
+<nav id="mainnav">
+  <div class="mainnav-inner">
+    <a href="index.html" class="nav-logo"><svg width="220" height="43" viewBox="0 0 400 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <title>Metrovest Insurance Agency</title>
+      <g transform="translate(18 14)">
+        <rect x="4" y="8" width="6" height="38" rx="1" fill="#ffffff"/>
+        <path d="M10 8 L18 8 L24 26 L30 8 L38 8" fill="none" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M30 8 L38 8 L44 26 L50 8 L58 8" fill="none" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+        <rect x="56" y="8" width="6" height="38" rx="1" fill="#ffffff"/>
+        <path d="M8 52 Q32 42 64 52" fill="none" stroke="#7fe09a" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <text x="92" y="46" font-family="Arial Black, Helvetica Neue, sans-serif" font-size="37" font-weight="900" fill="#ffffff" letter-spacing="-1.3">METROVEST</text>
+      <text x="92" y="62" font-family="Arial, Helvetica Neue, sans-serif" font-size="11.5" font-weight="700" fill="#7fe09a" letter-spacing="4">INSURANCE AGENCY</text>
+    </svg></a>
+    <div style="display:flex;align-items:center;gap:20px;">
+      <a href="index.html" class="nav-back">← Back to Home</a>
+      <a href="index.html#get-quote" class="nav-cta">Get a Quote →</a>
+    </div>
+  </div>
+</nav>
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> › All Products</div>
+    <h1>Our Insurance Products</h1>
+    <p>Browse all 22 products across individual, family and corporate insurance — each tailored for the Kenyan market and backed by IRA-licensed underwriters.</p>
+  </div>
+</section>
+<div class="search-bar">
+  <input type="text" class="search-input" placeholder="🔍  Search products — e.g. motor, WIBA, medical..." oninput="filterProducts(this.value)"/>
+</div>
+<div class="content" id="product-list">
+  
+    <div class="cat-section">
+      <div class="cat-header">
+        <span class="cat-icon">🏥</span>
+        <h2>Individual — Health</h2>
+      </div>
+      <div class="prod-grid">
+        <a href="medical-insurance.html" class="prod-card">
+          <span class="prod-icon">🏥</span>
+          <h3>Medical Insurance</h3>
+          <p>Inpatient, outpatient, dental, optical and maternity cover for individuals.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="family-medical-cover.html" class="prod-card">
+          <span class="prod-icon">👨‍👩‍👧</span>
+          <h3>Family Medical Cover</h3>
+          <p>One plan for your entire household from newborn to senior.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="travel-insurance.html" class="prod-card">
+          <span class="prod-icon">✈️</span>
+          <h3>Travel Insurance</h3>
+          <p>Global cover for medical emergencies, trip cancellation and lost baggage.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="international-health-cover.html" class="prod-card">
+          <span class="prod-icon">🌍</span>
+          <h3>International Health Cover</h3>
+          <p>World-class health insurance for Kenyans living or working abroad.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+      </div>
+    </div>
+    <div class="cat-section">
+      <div class="cat-header">
+        <span class="cat-icon">🛡️</span>
+        <h2>Individual — Life & Protection</h2>
+      </div>
+      <div class="prod-grid">
+        <a href="life-assurance.html" class="prod-card">
+          <span class="prod-icon">🛡️</span>
+          <h3>Life Assurance</h3>
+          <p>Protect your family's financial future with comprehensive life cover.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="term-life-cover.html" class="prod-card">
+          <span class="prod-icon">📋</span>
+          <h3>Term Life Cover</h3>
+          <p>Affordable pure life protection for a fixed period.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="personal-accident.html" class="prod-card">
+          <span class="prod-icon">🦺</span>
+          <h3>Personal Accident</h3>
+          <p>24-hour protection against accidental death, disability and injury.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="last-expense-cover.html" class="prod-card">
+          <span class="prod-icon">🕊️</span>
+          <h3>Last Expense Cover</h3>
+          <p>Fast financial support for funeral and burial costs.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+      </div>
+    </div>
+    <div class="cat-section">
+      <div class="cat-header">
+        <span class="cat-icon">🚗</span>
+        <h2>Individual — Assets & Liability</h2>
+      </div>
+      <div class="prod-grid">
+        <a href="motor-insurance.html" class="prod-card">
+          <span class="prod-icon">🚗</span>
+          <h3>Motor Insurance</h3>
+          <p>Comprehensive and third-party vehicle cover for Kenyan roads.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="domestic-package.html" class="prod-card">
+          <span class="prod-icon">🏠</span>
+          <h3>Domestic Package</h3>
+          <p>All-in-one cover for your home, contents and personal effects.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+      </div>
+    </div>
+    <div class="cat-section">
+      <div class="cat-header">
+        <span class="cat-icon">💼</span>
+        <h2>Corporate — Employee Benefits</h2>
+      </div>
+      <div class="prod-grid">
+        <a href="group-medical-cover.html" class="prod-card">
+          <span class="prod-icon">🏢</span>
+          <h3>Group Medical Cover</h3>
+          <p>Affordable, comprehensive health cover for your entire workforce.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="wiba.html" class="prod-card">
+          <span class="prod-icon">⚠️</span>
+          <h3>WIBA — Work Injury Benefits</h3>
+          <p>Mandatory employer liability cover under the WIBA Act 2007.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="group-life-policy.html" class="prod-card">
+          <span class="prod-icon">💼</span>
+          <h3>Group Life Policy</h3>
+          <p>Financial protection for employees' families at group rates.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="group-last-expense.html" class="prod-card">
+          <span class="prod-icon">🕊️</span>
+          <h3>Group Last Expense</h3>
+          <p>Fast funeral benefits for employees and their immediate families.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+      </div>
+    </div>
+    <div class="cat-section">
+      <div class="cat-header">
+        <span class="cat-icon">🏗️</span>
+        <h2>Corporate — Business Cover</h2>
+      </div>
+      <div class="prod-grid">
+        <a href="contractor-all-risk.html" class="prod-card">
+          <span class="prod-icon">🏗️</span>
+          <h3>Contractor All Risk</h3>
+          <p>Complete protection for construction projects from ground-breaking to handover.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="marine-cover.html" class="prod-card">
+          <span class="prod-icon">🚢</span>
+          <h3>Marine Cover</h3>
+          <p>End-to-end protection for goods in transit by sea, air and road.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="professional-indemnity.html" class="prod-card">
+          <span class="prod-icon">📑</span>
+          <h3>Professional Indemnity</h3>
+          <p>Protection against claims of negligence, errors and omissions.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="fire-perils.html" class="prod-card">
+          <span class="prod-icon">🔥</span>
+          <h3>Fire & Perils</h3>
+          <p>Protect your premises, stock and equipment against fire and allied perils.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+      </div>
+    </div>
+    <div class="cat-section">
+      <div class="cat-header">
+        <span class="cat-icon">⚖️</span>
+        <h2>Corporate — Liability</h2>
+      </div>
+      <div class="prod-grid">
+        <a href="public-liability.html" class="prod-card">
+          <span class="prod-icon">🏛️</span>
+          <h3>Public Liability</h3>
+          <p>Protection against third-party injury and property damage claims.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="employers-liability.html" class="prod-card">
+          <span class="prod-icon">👷</span>
+          <h3>Employers Liability</h3>
+          <p>Common-law liability cover beyond mandatory WIBA obligations.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="directors-officers.html" class="prod-card">
+          <span class="prod-icon">🏦</span>
+          <h3>Directors & Officers</h3>
+          <p>Personal liability protection for company directors and management.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+        <a href="fleet-insurance.html" class="prod-card">
+          <span class="prod-icon">🚛</span>
+          <h3>Fleet Insurance</h3>
+          <p>One policy for all your company vehicles.</p>
+          <span class="prod-link">Learn More →</span>
+        </a>
+      </div>
+    </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <p>© 2025 Metrovest Insurance Agency. IRA Licensed. All rights reserved.</p>
+    <p><a href="index.html">Home</a> · <a href="index.html#get-quote">Get a Quote</a></p>
+  </div>
+</footer>
+<script>
+function filterProducts(q) {
+  q = q.toLowerCase();
+  document.querySelectorAll('.prod-card').forEach(function(c) {
+    var text = c.textContent.toLowerCase();
+    c.style.display = (!q || text.includes(q)) ? '' : 'none';
+  });
+  document.querySelectorAll('.cat-section').forEach(function(s) {
+    var visible = Array.from(s.querySelectorAll('.prod-card')).some(function(c){ return c.style.display !== 'none'; });
+    s.style.display = visible ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>

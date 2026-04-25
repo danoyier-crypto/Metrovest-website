@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Term Life Cover | Metrovest Insurance Agency Kenya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#1a237e;--navy-dark:#0d1257;--navy-mid:#283593;--green:#1b7c3e;--green-light:#2ea055;--green-pale:#e8f5ed;--white:#ffffff;--gray:#5a6a7a;--text:#1a2535;--border:#d4dce6;--cream:#f4f7fb;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Satoshi',sans-serif;background:var(--white);color:var(--text);}
+#topbar{background:var(--navy-dark);height:38px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,0.08);}
+.topbar-inner{max-width:1280px;margin:0 auto;padding:0 5%;display:flex;align-items:center;justify-content:space-between;width:100%;}
+.topbar-left a{color:rgba(255,255,255,0.6);font-size:0.75rem;text-decoration:none;margin-right:20px;transition:color 0.2s;}
+.topbar-left a:hover{color:#7fe09a;}
+.topbar-btn{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.75);font-size:0.72rem;font-weight:600;padding:4px 12px;border-radius:4px;text-decoration:none;}
+.topbar-btn.primary{background:var(--green);border-color:var(--green);color:#fff;}
+#mainnav{position:sticky;top:0;z-index:900;background:var(--navy);border-bottom:3px solid var(--green);box-shadow:0 2px 20px rgba(0,0,0,0.25);}
+.mainnav-inner{max-width:1280px;margin:0 auto;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:72px;}
+.nav-logo svg{height:44px;display:block;}
+.nav-cta{background:var(--green);color:#fff;padding:10px 22px;border-radius:7px;font-weight:700;font-size:0.88rem;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:all 0.3s;}
+.nav-cta:hover{background:var(--green-light);}
+.nav-back{color:rgba(255,255,255,0.75);font-size:0.82rem;text-decoration:none;display:flex;align-items:center;gap:6px;transition:color 0.2s;}
+.nav-back:hover{color:#7fe09a;}
+/* ── HERO ── */
+.product-hero{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 55%,#163a5f 80%,#0d3020 100%);padding:28px 5% 0;position:relative;overflow:hidden;}
+.product-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
+.hero-inner{max-width:1280px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:start;}
+.hero-left{padding-bottom:28px;}
+.breadcrumb{color:rgba(255,255,255,0.45);font-size:0.75rem;margin-bottom:14px;letter-spacing:0.5px;}
+.breadcrumb a{color:rgba(255,255,255,0.55);text-decoration:none;}
+.breadcrumb a:hover{color:#7fe09a;}
+.hero-cat{display:inline-flex;align-items:center;gap:8px;background:rgba(27,124,62,0.2);border:1px solid rgba(27,124,62,0.4);color:#7fe09a;font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:50px;margin-bottom:16px;}
+.product-hero h1{font-size:clamp(2rem,4vw,3rem);font-weight:900;color:#fff;line-height:1.1;margin-bottom:14px;letter-spacing:-0.5px;}
+.product-hero .tagline{color:rgba(232,237,242,0.72);font-size:1rem;line-height:1.75;max-width:520px;margin-bottom:28px;}
+.hero-cta-row{display:flex;gap:12px;flex-wrap:wrap;}
+.btn-primary{background:var(--green);color:#fff;padding:13px 28px;border-radius:8px;font-weight:700;font-size:0.92rem;text-decoration:none;display:inline-flex;align-items:center;gap:7px;transition:all 0.3s;border:none;cursor:pointer;font-family:'Satoshi',sans-serif;}
+.btn-primary:hover{background:var(--green-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(27,124,62,0.4);}
+.btn-outline{background:transparent;color:#fff;padding:13px 28px;border-radius:8px;font-weight:600;font-size:0.92rem;text-decoration:none;border:1.5px solid rgba(255,255,255,0.35);display:inline-flex;align-items:center;gap:7px;transition:all 0.3s;}
+.btn-outline:hover{border-color:#7fe09a;color:#7fe09a;}
+/* ── HERO IMAGE PANEL ── */
+.hero-img-panel{position:relative;display:flex;flex-direction:column;align-items:center;}
+.hero-img{width:100%;border-radius:16px 16px 0 0;display:block;overflow:hidden;box-shadow:0 -8px 40px rgba(0,0,0,0.35);}
+.hero-img img{width:100%;height:360px;object-fit:cover;object-position:center top;display:block;border-radius:16px 16px 0 0;}
+/* ── PRICE STRIP BELOW IMAGE ── */
+.price-strip{width:100%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-top:none;border-radius:0 0 16px 16px;padding:12px 22px;display:flex;align-items:center;gap:12px;}
+.ps-from-label{color:rgba(232,237,242,0.5);font-size:0.72rem;text-transform:uppercase;letter-spacing:1.5px;}
+
+
+.ps-from-value{color:#7fe09a;font-weight:700;font-size:1rem;}
+/* ── MAIN CONTENT ── */
+.page-body{max-width:1280px;margin:0 auto;padding:64px 5%;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+.section{margin-bottom:48px;}
+.section-label{display:inline-block;color:var(--green);font-size:0.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px;}
+.section h2{font-size:1.55rem;font-weight:900;color:var(--navy);margin-bottom:20px;}
+.intro-text{color:var(--gray);font-size:1rem;line-height:1.85;}
+.cover-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;}
+.cover-grid li{list-style:none;display:flex;align-items:flex-start;gap:10px;background:var(--cream);border:1px solid var(--border);border-radius:8px;padding:12px 14px;font-size:0.86rem;color:var(--text);line-height:1.45;}
+.cover-grid li .check{color:var(--green);font-weight:700;flex-shrink:0;margin-top:1px;}
+.benefits-list{display:flex;flex-direction:column;gap:10px;margin-top:16px;}
+.benefits-list li{list-style:none;display:flex;align-items:flex-start;gap:12px;padding:14px 16px;background:var(--green-pale);border-left:3px solid var(--green);border-radius:0 8px 8px 0;font-size:0.88rem;color:var(--text);}
+.benefits-list li .star{color:var(--green);font-weight:700;flex-shrink:0;}
+.who-box{background:var(--navy);border-radius:12px;padding:24px;margin-top:16px;}
+.who-box p{color:rgba(232,237,242,0.8);font-size:0.9rem;line-height:1.7;}
+/* ── SIDEBAR ── */
+.sidebar{position:sticky;top:88px;}
+.quote-card{background:var(--white);border:1.5px solid var(--border);border-radius:16px;padding:28px;margin-bottom:24px;box-shadow:0 4px 24px rgba(26,35,126,0.08);}
+.quote-card h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.quote-card p{color:var(--gray);font-size:0.8rem;margin-bottom:20px;}
+.qf{display:flex;flex-direction:column;gap:10px;}
+.qf input,.qf select{width:100%;background:var(--cream);border:1.5px solid var(--border);border-radius:7px;padding:10px 13px;color:var(--text);font-family:'Satoshi',sans-serif;font-size:0.85rem;outline:none;transition:border-color 0.2s;appearance:none;}
+.qf input:focus,.qf select:focus{border-color:var(--green);background:#fff;}
+.qf input::placeholder{color:var(--gray);}
+.qf-submit{width:100%;background:var(--navy);color:#fff;padding:13px;border-radius:7px;font-weight:700;font-size:0.9rem;border:none;cursor:pointer;font-family:'Satoshi',sans-serif;transition:all 0.3s;}
+.qf-submit:hover{background:var(--green);}
+.success-msg{display:none;background:var(--green-pale);border:1px solid rgba(27,124,62,0.3);border-radius:7px;padding:12px;color:#1b5e2f;font-size:0.83rem;margin-top:8px;}
+.success-msg.show{display:block;}
+.contact-card{background:var(--cream);border:1px solid var(--border);border-radius:12px;padding:20px;}
+.contact-card h4{font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--navy);margin-bottom:14px;}
+.c-item{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:0.84rem;color:var(--text);text-decoration:none;}
+.c-item:last-child{margin-bottom:0;}
+.c-icon{width:32px;height:32px;background:var(--navy);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;}
+/* ── RELATED ── */
+.related-section{background:var(--cream);border-top:1px solid var(--border);padding:56px 5%;}
+.related-inner{max-width:1280px;margin:0 auto;}
+.related-section h3{font-size:1.2rem;font-weight:900;color:var(--navy);margin-bottom:24px;}
+.rel-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.rel-card{background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:20px;text-decoration:none;display:flex;align-items:center;gap:14px;transition:all 0.3s;}
+.rel-card:hover{border-color:var(--green);transform:translateY(-2px);box-shadow:0 8px 24px rgba(26,35,126,0.1);}
+.rel-icon{font-size:1.6rem;}
+.rel-title{color:var(--navy);font-weight:700;font-size:0.88rem;flex:1;}
+.rel-arrow{color:var(--green);font-weight:700;}
+footer{background:var(--navy-dark);border-top:3px solid var(--green);padding:32px 5%;}
+.footer-bottom{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{color:rgba(232,237,242,0.35);font-size:0.75rem;}
+.footer-bottom a{color:var(--green-light);text-decoration:none;}
+@media(max-width:1000px){
+  .hero-inner{grid-template-columns:1fr; gap:0;}
+  .hero-img-panel{display:flex; width:100%; border-radius:0;}
+  .hero-img img{height:260px; border-radius:0;}
+  .price-strip{width:100%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-top:none;border-radius:0 0 16px 16px;padding:12px 22px;display:flex;align-items:center;gap:12px;}
+  .hero-left{padding-bottom:20px;}
+  .page-body{grid-template-columns:1fr;}
+  .sidebar{position:static;}
+  .cover-grid{grid-template-columns:1fr;}
+  .rel-cards{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  #topbar{display:none;}
+  .product-hero{padding:40px 4% 0;}
+  .hero-left{padding-bottom:20px;}
+  .hero-img img{height:220px;}
+  .price-strip{width:100%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-top:none;border-radius:0 0 16px 16px;padding:12px 22px;display:flex;align-items:center;gap:12px;}
+  .ps-item{border-right:none; border-bottom:1px solid rgba(255,255,255,0.1); padding:8px 0;}
+  
+  .page-body{padding:36px 4%;}
+  .hero-cta-row{flex-direction:column;}
+  .btn-primary,.btn-outline{width:100%;justify-content:center;}
+}
+</style>
+</head>
+<body>
+<div id="topbar"><div class="topbar-inner"><div class="topbar-left"><a href="tel:+254734590744">📞 +254 734 590 744</a><a href="mailto:info@metrovest.co.ke">✉️ info@metrovest.co.ke</a></div><a href="index.html#get-quote" class="topbar-btn primary">Request Callback</a></div></div>
+<nav id="mainnav"><div class="mainnav-inner"><a href="index.html" class="nav-logo"><svg width="220" height="43" viewBox="0 0 400 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <title>Metrovest Insurance Agency</title>
+      <g transform="translate(18 14)">
+        <rect x="4" y="8" width="6" height="38" rx="1" fill="#ffffff"/>
+        <path d="M10 8 L18 8 L24 26 L30 8 L38 8" fill="none" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M30 8 L38 8 L44 26 L50 8 L58 8" fill="none" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+        <rect x="56" y="8" width="6" height="38" rx="1" fill="#ffffff"/>
+        <path d="M8 52 Q32 42 64 52" fill="none" stroke="#7fe09a" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <text x="92" y="46" font-family="Arial Black, Helvetica Neue, sans-serif" font-size="37" font-weight="900" fill="#ffffff" letter-spacing="-1.3">METROVEST</text>
+      <text x="92" y="62" font-family="Arial, Helvetica Neue, sans-serif" font-size="11.5" font-weight="700" fill="#7fe09a" letter-spacing="4">INSURANCE AGENCY</text>
+    </svg></a><div style="display:flex;align-items:center;gap:20px;"><a href="index.html" class="nav-back">← Back to Home</a><a href="index.html#get-quote" class="nav-cta">Get a Quote →</a></div></div></nav>
+<section class="product-hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="breadcrumb"><a href="index.html">Home</a> › <a href="products.html">Life & Protection</a> › Term Life Cover</div>
+      <div class="hero-cat">📋 Life & Protection</div>
+      <h1>Term Life Cover</h1>
+      <p class="tagline">We compare term life rates across the market to get you maximum cover at minimum cost</p>
+      <div class="hero-cta-row">
+        <a href="index.html#get-quote" class="btn-primary">Compare Plans →</a>
+        <a href="tel:+254734590744" class="btn-outline">📞 Call Us Now</a>
+      </div>
+    </div>
+    <div class="hero-img-panel">
+      <div class="hero-img"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM4MCIgdmlld0JveD0iMCAwIDYwMCAzODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmNGY3ZmIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlOGVkZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM4MCIgZmlsbD0idXJsKCNiZykiLz48cmVjdCB4PSIxMjAiIHk9IjYwIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjI3MCIgcng9IjEyIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSIjZDRkY2U2IiBzdHJva2Utd2lkdGg9IjIiLz48cmVjdCB4PSIxMjAiIHk9IjYwIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjcwIiByeD0iMTIiIGZpbGw9IiMxYTIzN2UiLz48cmVjdCB4PSIxMjAiIHk9IjExMCIgd2lkdGg9IjIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzFhMjM3ZSIvPjxyZWN0IHg9IjE0MCIgeT0iMTMwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZThlZGYyIi8+PHJlY3QgeD0iMTc0IiB5PSIxMzAiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNlOGVkZjIiLz48cmVjdCB4PSIyMDgiIHk9IjEzMCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iI2U4ZWRmMiIvPjxyZWN0IHg9IjI0MiIgeT0iMTMwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjMWI3YzNlIi8+PHJlY3QgeD0iMTQwIiB5PSIxNjAiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNlOGVkZjIiLz48cmVjdCB4PSIxNzQiIHk9IjE2MCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iIzFiN2MzZSIvPjxyZWN0IHg9IjE0MCIgeT0iMjAwIiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjZDRkY2U2Ii8+PHJlY3QgeD0iMTQwIiB5PSIyMTgiIHdpZHRoPSIxMzAiIGhlaWdodD0iOCIgcng9IjQiIGZpbGw9IiNkNGRjZTYiLz48cmVjdCB4PSIxNDAiIHk9IjIzNiIgd2lkdGg9IjE1MCIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iI2Q0ZGNlNiIvPjxyZWN0IHg9IjE0MCIgeT0iMjcwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjE0IiByeD0iNCIgZmlsbD0iIzFiN2MzZSIvPjxjaXJjbGUgY3g9IjQ2MCIgY3k9IjE2MCIgcj0iNzUiIGZpbGw9IiMxYTIzN2UiIG9wYWNpdHk9IjAuOSIvPjx0ZXh0IHg9IjQ2MCIgeT0iMTgwIiBmb250LXNpemU9IjU2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+8J+boe+4jzwvdGV4dD48Y2lyY2xlIGN4PSIxMDAiIGN5PSIzMDAiIHI9IjQwIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSIjMWI3YzNlIiBzdHJva2Utd2lkdGg9IjMiLz48bGluZSB4MT0iMTAwIiB5MT0iMzAwIiB4Mj0iMTAwIiB5Mj0iMjcwIiBzdHJva2U9IiMxYTIzN2UiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGxpbmUgeDE9IjEwMCIgeTE9IjMwMCIgeDI9IjExOCIgeTI9IjMxMCIgc3Ryb2tlPSIjMWI3YzNlIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPg==" alt="Term Life Cover — Metrovest Insurance Kenya"/></div>
+      <div class="price-strip">
+        <span class="ps-from-label">Starting From</span>
+        <span class="ps-from-value">From KSh 800/month for KSh 1 million cover</span>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="page-body">
+  <main>
+    <div class="section"><span class="section-label">About This Cover</span><h2>What Is Term Life Cover?</h2><p class="intro-text">As an independent insurance agency, Metrovest sources term life cover from leading Kenyan underwriters, comparing premium rates, exclusions and claim track records before making a recommendation. We ensure you get the maximum death benefit for the lowest premium — without being tied to any single insurer.</p></div>
+    <div class="section"><span class="section-label">Coverage</span><h2>What's Covered</h2><ul class="cover-grid"><li><span class="check">✓</span>Level death benefit for the full policy term</li><li><span class="check">✓</span>Terminal illness early payout</li><li><span class="check">✓</span>Total and permanent disability rider (optional)</li><li><span class="check">✓</span>Conversion option to whole life at term end</li><li><span class="check">✓</span>No medical examination for sums under KSh 5 million</li></ul></div>
+    <div class="section"><span class="section-label">Why Use Metrovest</span><h2>Benefits of Using a Metrovest Advisor</h2><ul class="benefits-list"><li><span class="star">★</span>Market-wide comparison to find you the most competitive term rate</li><li><span class="star">★</span>We explain policy exclusions clearly before you commit</li><li><span class="star">★</span>One advisor throughout the policy term — not a call centre</li><li><span class="star">★</span>Fast issuance — most term policies issued within 48 hours</li><li><span class="star">★</span>Conversion advice at term end — we guide you to the right renewal or upgrade</li><li><span class="star">★</span>No cost to you — agency fee is paid by the underwriter</li></ul></div>
+    <div class="section"><span class="section-label">Who We Help</span><h2>Who We Help</h2><div class="who-box"><p>Young families, first-time insurance buyers, mortgage holders and budget-conscious individuals</p></div></div>
+  </main>
+  <aside class="sidebar">
+    <div class="quote-card">
+      <h3>Get Expert Advice</h3><p>We'll compare options and call you within 2 hours</p>
+      <div class="qf">
+        <input type="text" placeholder="Full Name" id="name_term-life-cover"/>
+        <input type="tel" placeholder="Phone Number" id="phone_term-life-cover"/>
+        <input type="email" placeholder="Email Address" id="email_term-life-cover"/>
+        <select id="how_term-life-cover"><option value="">How can we help?</option><option>New Policy</option><option>Renew Existing Policy</option><option>Compare Options</option><option>General Enquiry</option></select>
+        <button class="qf-submit" title="Metrovest will compare options and call you back" onclick="submitQ('term-life-cover')">Request Quote →</button>
+        <div class="success-msg" id="ok_term-life-cover">✅ Received! We'll call you within 2 hours.</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <h4>Speak to an Advisor</h4>
+      <a href="tel:+254734590744" class="c-item"><span class="c-icon">📞</span> +254 734 590 744</a>
+      <a href="mailto:info@metrovest.co.ke" class="c-item"><span class="c-icon">✉️</span> info@metrovest.co.ke</a>
+      <a href="https://wa.me/254734590744?text=Hi, I need a quote for Term Life Cover" target="_blank" class="c-item"><span class="c-icon">💬</span> WhatsApp Us</a>
+    </div>
+  </aside>
+</div>
+<section class="related-section"><div class="related-inner"><h3>You Might Also Be Interested In</h3><div class="rel-cards"><a href="life-assurance.html" class="rel-card"><span class="rel-icon">🛡️</span><span class="rel-title">Life Assurance</span><span class="rel-arrow">→</span></a><a href="personal-accident.html" class="rel-card"><span class="rel-icon">🦺</span><span class="rel-title">Personal Accident</span><span class="rel-arrow">→</span></a><a href="last-expense-cover.html" class="rel-card"><span class="rel-icon">🕊️</span><span class="rel-title">Last Expense Cover</span><span class="rel-arrow">→</span></a></div></div></section>
+<footer><div class="footer-bottom"><p>© 2025 Metrovest Insurance Agency. IRA Licensed. All rights reserved.</p><p><a href="index.html">Home</a> · <a href="index.html#get-quote">Get Advice</a></p></div></footer>
+<script>
+function submitQ(slug){var n=document.getElementById('name_'+slug).value;var p=document.getElementById('phone_'+slug).value;if(!n||!p){alert('Please enter your name and phone number.');return;}document.getElementById('ok_'+slug).classList.add('show');['name_','phone_','email_','how_'].forEach(function(pre){var el=document.getElementById(pre+slug);if(el)el.value='';});setTimeout(function(){document.getElementById('ok_'+slug).classList.remove('show');},7000);}
+</script>
+</body></html>
