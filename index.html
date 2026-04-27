@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- METROVEST v5.0 ACCORDION MENU -->
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
@@ -574,7 +575,7 @@ footer{background:var(--navy-dark);border-top:3px solid var(--green);}
 /* ============ MOBILE MENU ============ */
 #mobile-nav{
   display:none;position:fixed;top:0;left:0;right:0;bottom:0;
-  background:var(--navy);z-index:799;overflow-y:auto;
+  background:var(--navy);z-index:9999;overflow-y:auto;
   flex-direction:column; padding-top:72px;
 }
 #mobile-nav.open{display:block;}
@@ -925,7 +926,7 @@ footer{background:var(--navy-dark);border-top:3px solid var(--green);}
 </nav>
 
 <!-- MOBILE NAV -->
-<div id="mobile-nav">
+<div id="mobile-nav"><div id="v5-marker" style="display:none;">v5</div>
 
   <!-- INDIVIDUAL -->
   <a class="mob-link mob-toggle" data-target="sub-individual" href="#">Individual <span class="mob-arrow">▾</span></a>
@@ -966,7 +967,7 @@ footer{background:var(--navy-dark);border-top:3px solid var(--green);}
   </div>
 
   <a class="mob-link" href="products.html" onclick="closeMob()">All Products</a>
-  <a class="mob-link" href="#why-us" onclick="closeMob()">Why Metrovest</a>
+  <a class="mob-link" href="#why-us" onclick="closeMob()">Why Metrovest ✓</a>
   <a class="mob-link" href="#get-quote" onclick="closeMob()" style="color:#7fe09a;">Get a Quote →</a>
   <a class="mob-link" href="tel:+254734590744" style="color:#7fe09a;">📞 +254 734 590 744</a>
 
