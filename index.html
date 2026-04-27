@@ -928,9 +928,7 @@ footer{background:var(--navy-dark);border-top:3px solid var(--green);}
 <div id="mobile-nav">
 
   <!-- INDIVIDUAL -->
-  <a class="mob-link" href="#" onclick="toggleMobSub(event,'sub-individual'); return false;">
-    Individual <span class="mob-arrow">▾</span>
-  </a>
+  <a class="mob-link mob-toggle" data-target="sub-individual" href="#">Individual <span class="mob-arrow">▾</span></a>
   <div class="mob-sub" id="sub-individual" style="display:none;">
     <span class="mob-sub-label">Health</span>
     <a href="medical-insurance.html" onclick="closeMob()">Medical Insurance</a>
@@ -948,9 +946,7 @@ footer{background:var(--navy-dark);border-top:3px solid var(--green);}
   </div>
 
   <!-- CORPORATE -->
-  <a class="mob-link" href="#" onclick="toggleMobSub(event,'sub-corporate'); return false;">
-    Corporate <span class="mob-arrow">▾</span>
-  </a>
+  <a class="mob-link mob-toggle" data-target="sub-corporate" href="#">Corporate <span class="mob-arrow">▾</span></a>
   <div class="mob-sub" id="sub-corporate" style="display:none;">
     <span class="mob-sub-label">Employee Benefits</span>
     <a href="group-medical-cover.html" onclick="closeMob()">Group Medical Cover</a>
@@ -1407,33 +1403,55 @@ function switchTab(idx) {
 // ---- MOBILE NAV ----
 function toggleMob() {
   var nav = document.getElementById('mobile-nav');
-  var isOpen = nav.style.display === 'block';
-  nav.style.display = isOpen ? 'none' : 'block';
+  var isOpen = nav.classList.contains('open');
+  if (isOpen) {
+    nav.classList.remove('open');
+    nav.style.display = 'none';
+  } else {
+    nav.classList.add('open');
+    nav.style.display = 'block';
+  }
 }
 function closeMob() {
   var nav = document.getElementById('mobile-nav');
+  nav.classList.remove('open');
   nav.style.display = 'none';
   var subs = document.querySelectorAll('.mob-sub');
-  for (var i = 0; i < subs.length; i++) { subs[i].style.display = 'none'; }
-  var links = document.querySelectorAll('.mob-link');
-  for (var i = 0; i < links.length; i++) { links[i].classList.remove('open'); }
-}
-function toggleMobSub(e, id) {
-  if (e) { e.preventDefault(); e.stopPropagation(); }
-  var sub = document.getElementById(id);
-  if (!sub) return;
-  var isOpen = sub.style.display === 'block';
-  // Close all
-  var subs = document.querySelectorAll('.mob-sub');
-  for (var i = 0; i < subs.length; i++) { subs[i].style.display = 'none'; }
-  var links = document.querySelectorAll('.mob-link');
-  for (var i = 0; i < links.length; i++) { links[i].classList.remove('open'); }
-  // Open this one if it was closed
-  if (!isOpen) {
-    sub.style.display = 'block';
-    if (e && e.currentTarget) e.currentTarget.classList.add('open');
+  for (var i = 0; i < subs.length; i++) {
+    subs[i].style.display = 'none';
+    subs[i].classList.remove('open');
   }
+  var toggles = document.querySelectorAll('.mob-toggle');
+  for (var i = 0; i < toggles.length; i++) { toggles[i].classList.remove('open'); }
 }
+// Attach accordion listeners after DOM loads
+document.addEventListener('DOMContentLoaded', function() {
+  var toggles = document.querySelectorAll('.mob-toggle');
+  for (var i = 0; i < toggles.length; i++) {
+    toggles[i].addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var targetId = this.getAttribute('data-target');
+      var sub = document.getElementById(targetId);
+      if (!sub) return;
+      var isOpen = sub.classList.contains('open');
+      // Close all subs
+      var allSubs = document.querySelectorAll('.mob-sub');
+      for (var j = 0; j < allSubs.length; j++) {
+        allSubs[j].style.display = 'none';
+        allSubs[j].classList.remove('open');
+      }
+      var allToggles = document.querySelectorAll('.mob-toggle');
+      for (var j = 0; j < allToggles.length; j++) { allToggles[j].classList.remove('open'); }
+      // Open this one if it was closed
+      if (!isOpen) {
+        sub.style.display = 'block';
+        sub.classList.add('open');
+        this.classList.add('open');
+      }
+    });
+  }
+});
 
 // ---- SELF SERVICE ----
 function openSS(e) {
